@@ -1,0 +1,11 @@
+<form *ngIf="showAddComment" (ngSubmit)="onSubmit()">
+  <div>
+    <label>email</label>
+    <input type="text" name="email" [(ngModel)]="email" id="email" />
+    <label>name</label>
+    <input type="text" name="name" [(ngModel)]="name" id="name" />
+    <label>body</label>
+    <input type="text" name="body" [(ngModel)]="body" id="body" />
+    <input type="submit" value="Submit" />
+  </div>
+</form>

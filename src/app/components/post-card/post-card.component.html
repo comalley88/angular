@@ -1,0 +1,17 @@
+<mat-card class="example-card">
+    <mat-card-content>
+       Name: {{ this.user?.name }}
+    </mat-card-content>
+
+    <mat-card-content>Company Name: {{ this.user?.company?.name }}</mat-card-content>
+    <mat-card-content>Post Title: {{ post.title }}</mat-card-content>
+    <mat-card-content>Post Body: {{ post.body }}</mat-card-content>
+    <mat-card-actions>
+        <app-button (btnClick)="onToggleComments()" text="View Comments"></app-button>
+        <app-button (btnClick)="onClickA()" text="Add Comments"></app-button>
+    </mat-card-actions>
+    <mat-card-content>
+        <app-comments [showMe]="showComments" [post]="post"></app-comments>
+    </mat-card-content>
+</mat-card>
+

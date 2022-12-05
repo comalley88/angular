@@ -1,0 +1,9 @@
+<div *ngIf="showMe">
+    <div *ngFor="let comment of comments">
+    <p>name: {{ comment.name }}</p>
+    <p>email: {{ comment.email }}</p>
+    <p>message: {{ comment.body }}</p>
+    </div>
+    <app-button (btnClick)="toggleAddComment()" text="{{showAddComment ? 'Close' : 'Add comment'}}" ></app-button>
+    <app-add-comment (OnAddComment)="handleAddComment($event)" [post]="post"></app-add-comment>
+  </div>
