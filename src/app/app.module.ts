@@ -11,8 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { PostCardComponent } from './components/post-card/post-card.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { AddCommentComponent } from './components/add-comment/add-comment.component';
-import {MatCardModule} from '@angular/material/card';
-import {MatButtonModule} from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -30,8 +29,7 @@ import {MatButtonModule} from '@angular/material/button';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    MatCardModule,
-    MatButtonModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
